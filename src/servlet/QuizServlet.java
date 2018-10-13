@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class EvaluateServlet
+ * Servlet implementation class QuizServlet
  */
-@WebServlet("/EvaluateServlet")
-public class EvaluateServlet extends HttpServlet {
+@WebServlet("/QuizServlet")
+public class QuizServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public EvaluateServlet() {
+    public QuizServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -27,6 +27,7 @@ public class EvaluateServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
