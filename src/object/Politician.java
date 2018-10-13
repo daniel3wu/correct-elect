@@ -10,12 +10,14 @@ public class Politician {
 	private Double enviroRating;
 	
 	private HashMap<String, Double> sigRatings = new HashMap<String, Double>();
+	private HashMap<String, int> opinions = new HashMap<String, int> ();
 	
 	public Politician(String name) {
 		myName = name;
 		
 		int nraId = 0; //TODO: load in NRA ids
 		nraRating = getRating(nraId, "nra");
+		
 		
 	}
 	
