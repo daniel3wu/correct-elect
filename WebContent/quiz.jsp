@@ -8,5 +8,7 @@
 </head>
 <body>
 	<h1>*insert questions about politician*</h1>
+	
+	<a href="http://localhost:8080/correct-elect/MatchServlet">GO TO MATCH SERVLET</a>
 </body>
 </html>
