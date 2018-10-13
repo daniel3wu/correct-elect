@@ -13,7 +13,11 @@ public class Politician {
 	
 	
 	private Double nraRating;
-	private Double enviroRating;
+	private int gunRating;
+	private int lgbtqRating;
+	private int enviroRating;
+	private int abortionRating;
+	private int healthcareRating;
 	
 	public enum Party {DEMOCRAT, REPUBLICAN}
 	private static final ArrayList<Party> parties = new ArrayList<Party> (Arrays.asList(Party.values()));
@@ -23,6 +27,7 @@ public class Politician {
 	
 	private Party myParty;
 	private Office myOffice;
+	private int myZip;
 	
 	Random rand = new Random();
 	
@@ -34,19 +39,44 @@ public class Politician {
 	public Politician(String name) {
 		myName = name;
 		
-		int nraId = 0;
+//		int nraId = 0;
+//		nraRating = getSigRating(nraId, "nra");
 		
-		nraRating = getRating(nraId, "nra");
+		initializeRatings();
 		myParty = parties.get(rand.nextInt(parties.size()));
 		myOffice = offices.get(rand.nextInt(parties.size()));
-		
+		myZip = rand.nextInt(89999)+10000;
 	}
 	
 	public String getName() {
 		return myName;
 	}
 	
-	private double getRating(int sigId, String sigName) {
+	private void initializeRatings() {
+		gunRating = rand.nextInt(3);
+		lgbtqRating = rand.nextInt(3);
+		enviroRating = rand.nextInt(3);
+		abortionRating = rand.nextInt(3);
+		healthcareRating = rand.nextInt(3);
+	}
+	
+	public int getGunRating() {
+		return gunRating;
+	}
+	public int getLgbtqRating() {
+		return lgbtqRating;
+	}
+	public int getEnviroRating() {
+		return enviroRating;
+	}
+	public int getAbortionRating() {
+		return abortionRating;
+	}
+	public int getHealthcareRating() {
+		return healthcareRating;
+	}
+	
+	private double getSigRating(int sigId, String sigName) {
 		//use api and the getCandidateRating function to return the candidates rating with the sig
 		
 		double rate = rand.nextInt(3);
