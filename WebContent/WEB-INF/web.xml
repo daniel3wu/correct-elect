@@ -7,22 +7,4 @@
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
   
-  <servlet>
-    <servlet-name>MatchServlet</servlet-name>
-    <servlet-class>servlet.MatchServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>MatchServlet</servlet-name>
-    <url-pattern>/match</url-pattern>
-  </servlet-mapping>
-  
-  <servlet>
-    <servlet-name>HelloServlet</servlet-name>
-    <servlet-class>servlet.HelloServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>HelloServlet</servlet-name>
-    <url-pattern>/HelloServlet</url-pattern>
-  </servlet-mapping>
-  
 </web-app>
