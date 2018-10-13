@@ -1,6 +1,7 @@
 package object;
 
 import java.util.HashMap;
+import java.util.Random;
 
 public class Politician {
 	private String myName;
@@ -9,8 +10,10 @@ public class Politician {
 	private Double nraRating;
 	private Double enviroRating;
 	
+	Random rand = new Random();
+	
 	private HashMap<String, Double> sigRatings = new HashMap<String, Double>();
-	private HashMap<String, int> opinions = new HashMap<String, int> ();
+	private HashMap<String, Integer> opinions = new HashMap<String, Integer> ();
 	
 	public Politician(String name) {
 		myName = name;
@@ -28,7 +31,7 @@ public class Politician {
 	private double getRating(int sigId, String sigName) {
 		//use api and the getCandidateRating function to return the candidates rating with the sig
 		
-		double rate = 0.0;
+		double rate = rand.nextDouble();
 		//double rate = Rating.getCandidateRating(myId, sigId);
 		sigRatings.put("nra", rate);
 		return rate;
