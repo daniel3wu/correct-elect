@@ -46,4 +46,15 @@
     <url-pattern>/profile/*</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <servlet-name>QuizServlet</servlet-name>
+    <servlet-class>servlet.QuizServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>QuizServlet</servlet-name>
+    <url-pattern>/quiz/*</url-pattern>
+  </servlet-mapping>
+  
+  
 </web-app>
