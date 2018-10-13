@@ -15,6 +15,7 @@ public class Matcher {
 		private List<Politician> myPoliticians;
 		private Map<Politician, Integer> map;
 		
+		
 		/**
 		 * Constructor for matcher class
 		 * @param person the user to find preference for
@@ -23,14 +24,41 @@ public class Matcher {
 		public Matcher(User person, List<Politician> politicians) {
 			myUser = person;
 			myPoliticians = new ArrayList<Politician>(politicians);
-			map = new HashMap<Politician, Integer>();
+			map = matchAll();
 		}
 		
-		private int match(User user, Politician politician) {
+		/**
+		 * Calculates the % agreement of opinions between the politician passed and myUser by 
+		 * calculating the mean difference of opinion in each topic
+		 * @param politician
+		 * @return
+		 */
+		private int match(Politician politician) {
 			int diff = 0;
-			//for(String key: user.)
+			//TODO: update the term for opinions
+			for(String key: myUser.opinions.keySet) {
+				diff += Math.pow((myUser.opinions.get(key) - politician.opinions.get(key)), 2);
+			}
+			diff = diff/myUser.opinions.length;
 			
-			return 0;
+			return (int) ((4 - diff)/0.04);
 			
 		}
+		
+		/**
+		 * Calculates the % agreement for all politicans and returns a corresponding hashmap
+		 * @return returns a map in the form <Politician, % agreement>
+		 */
+		private Map<Politician, Integer> matchAll(){
+			Map<Politician, Integer> map = new HashMap<Politician, Integer>();
+			for(Politician pol: myPoliticians) {
+				map.put(pol, match(pol));
+			}
+			return map;
+		}
+		
+		//TODO: add several getter methods which return e.g. the best agreement, agreemenents over a desired 
+		//% and any more you want
+		
+		
 }
