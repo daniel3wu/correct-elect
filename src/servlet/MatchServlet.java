@@ -28,8 +28,8 @@ public class MatchServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/index.jsp");
+		System.out.println("Inside the MatchServlet.java class");
+		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/results.jsp");
         dispatcher.forward(request, response);
 	}
 
