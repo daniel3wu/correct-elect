@@ -3,10 +3,26 @@
   <display-name>correct-elect</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.html</welcome-file>
     <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>MatchServlet</servlet-name>
+    <servlet-class>servlet.MatchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MatchServlet</servlet-name>
+    <url-pattern>/match</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>HelloServlet</servlet-name>
+    <servlet-class>servlet.HelloServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloServlet</servlet-name>
+    <url-pattern>/HelloServlet</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
