@@ -13,7 +13,7 @@
   
   <servlet-mapping>
     <servlet-name>EvaluateServlet</servlet-name>
-    <url-pattern>/evaluate/*</url-pattern>
+    <url-pattern>/evaluate</url-pattern>
   </servlet-mapping>
 
   <servlet>
@@ -23,7 +23,7 @@
   
   <servlet-mapping>
     <servlet-name>HelloServlet</servlet-name>
-    <url-pattern>/hello/*</url-pattern>
+    <url-pattern>/hello</url-pattern>
   </servlet-mapping>
   
     <servlet>
@@ -33,7 +33,7 @@
   
   <servlet-mapping>
     <servlet-name>MatchServlet</servlet-name>
-    <url-pattern>/match/*</url-pattern>
+    <url-pattern>/match</url-pattern>
   </servlet-mapping>
   
     <servlet>
@@ -43,7 +43,7 @@
   
   <servlet-mapping>
     <servlet-name>ProfileServlet</servlet-name>
-    <url-pattern>/profile/*</url-pattern>
+    <url-pattern>/profile</url-pattern>
   </servlet-mapping>
   
   <servlet>
@@ -53,7 +53,7 @@
   
   <servlet-mapping>
     <servlet-name>QuizServlet</servlet-name>
-    <url-pattern>/quiz/*</url-pattern>
+    <url-pattern>/quiz</url-pattern>
   </servlet-mapping>
   
   

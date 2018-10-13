@@ -31,9 +31,9 @@ public class Politician {
 	private double getRating(int sigId, String sigName) {
 		//use api and the getCandidateRating function to return the candidates rating with the sig
 		
-		double rate = rand.nextDouble();
+		double rate = rand.nextInt(3);
 		//double rate = Rating.getCandidateRating(myId, sigId);
-		sigRatings.put("nra", rate);
+		sigRatings.put(sigName, rate);
 		return rate;
 	}
 	
