@@ -5,7 +5,6 @@
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
-<<<<<<< HEAD
   
   <servlet>
     <servlet-name>EvaluateServlet</servlet-name>
@@ -47,6 +46,4 @@
     <url-pattern>/profile/*</url-pattern>
   </servlet-mapping>
   
-=======
->>>>>>> 95cc2eea4e5161551d13a1c4ce14560a8b3041a2
 </web-app>
