@@ -3,7 +3,7 @@ package matcher;
 public class Question {
 
 	
-	int answer = 0;
+	private int answer;
 	
 	Question(String input){
 		
