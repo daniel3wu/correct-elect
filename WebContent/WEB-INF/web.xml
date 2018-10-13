@@ -24,10 +24,11 @@
   <servlet-mapping>
     <servlet-name>HelloServlet</servlet-name>
     <url-pattern>/hello</url-pattern>
+    
   </servlet-mapping>
   
     <servlet>
-    <servlet-name>MatchsServlet</servlet-name>
+    <servlet-name>MatchServlet</servlet-name>
     <servlet-class>servlet.MatchServlet</servlet-class>
   </servlet>
   

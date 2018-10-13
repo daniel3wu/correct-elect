@@ -33,7 +33,7 @@ public class HelloServlet extends HttpServlet {
 //		response.getWriter().append("Served at: ").append(request.getContextPath());
 		
 		RequestDispatcher dispatcher = getServletContext()
-                .getRequestDispatcher("/index.jsp");
+                .getRequestDispatcher("WEB-INF/index.jsp");
         dispatcher.forward(request, response);
         
 		
