@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Elect Correct Project</title>
 </head>
 <body>
 <h1>Oi</h1>
