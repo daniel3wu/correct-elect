@@ -6,4 +6,44 @@
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
   
+  <servlet>
+    <servlet-name>EvaluateServlet</servlet-name>
+    <servlet-class>servlet.EvaluateServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>EvaluateServlet</servlet-name>
+    <url-pattern>/evaluate/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>HelloServlet</servlet-name>
+    <servlet-class>servlet.HelloServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>HelloServlet</servlet-name>
+    <url-pattern>/hello/*</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>MatchsServlet</servlet-name>
+    <servlet-class>servlet.MatchServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>MatchServlet</servlet-name>
+    <url-pattern>/match/*</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>ProfileServlet</servlet-name>
+    <servlet-class>servlet.ProfileServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ProfileServlet</servlet-name>
+    <url-pattern>/profile/*</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

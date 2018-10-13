@@ -3,9 +3,6 @@ package object;
 import java.util.HashMap;
 
 public class Politician {
-<<<<<<< HEAD:src/object/Politician.java
-
-=======
 	private String myName;
 	private String myId;
 	
@@ -17,15 +14,22 @@ public class Politician {
 	public Politician(String name) {
 		myName = name;
 		
+		int nraId = 0; //TODO: load in NRA ids
+		nraRating = getRating(nraId, "nra");
+		
 	}
 	
 	public String getName() {
 		return myName;
 	}
 	
-	private Double getRating(int myId, int sigId) {
-		//use api and the getCandidateRating function to return the candidates rating with the NRA
-		return 0.0;
+	private double getRating(int sigId, String sigName) {
+		//use api and the getCandidateRating function to return the candidates rating with the sig
+		
+		double rate = 0.0;
+		//double rate = Rating.getCandidateRating(myId, sigId);
+		sigRatings.put("nra", rate);
+		return rate;
 	}
->>>>>>> fdd2824435a5272a9d2a5af1d6a9144acb9b4c2e:src/matcher/Politician.java
+	
 }
