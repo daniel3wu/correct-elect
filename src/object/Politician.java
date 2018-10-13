@@ -1,5 +1,5 @@
-package matcher;
+package object;
 
 public class Politician {
-	
+
 }

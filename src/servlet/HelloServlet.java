@@ -21,7 +21,7 @@ public class HelloServlet extends HttpServlet {
      */
     public HelloServlet() {
     	super();
-    	System.out.println("Inside constructor");
+ 
         // TODO Auto-generated constructor stub
     }
 
@@ -33,10 +33,10 @@ public class HelloServlet extends HttpServlet {
 //		response.getWriter().append("Served at: ").append(request.getContextPath());
 		
 		RequestDispatcher dispatcher = getServletContext()
-                .getRequestDispatcher("/WEB-INF/index.jsp");
+                .getRequestDispatcher("/index.jsp");
         dispatcher.forward(request, response);
         
-		System.out.println("This worked!");
+		
 	}
 
 	/**
