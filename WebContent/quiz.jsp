@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Find Your Politician</title>
 </head>
 <body>
-
+	<h1>*insert questions about politician*</h1>
 </body>
 </html>
