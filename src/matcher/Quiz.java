@@ -1,14 +1,16 @@
 package matcher;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Quiz {
 	int size = 0; 
-	ArrayList<Question> questions = new ArrayList<Question>(); 
+	HashMap<String,Question> questions = new HashMap<String, Question>(); 
 	
 	
+	String[] opinions = {"LGBTQ", "Gun", "Global Warming", "Abortion", "Health Care"};
 	Quiz(int size){
-		this.setAnswers(size);
+		this.setAnswers(opinions.length);
 		
 		
 	}
@@ -16,14 +18,15 @@ public class Quiz {
 	public void setAnswers(int size) {
 		for (int i =0; i < size; i++) {
 		//	Question q = new Question();//enter input
-		//	questions.add(q);
+			
+		//questions.put(opinions[i], q);
 					
 		}
 		
 		
 	}
 
-	public ArrayList<Question> getAnswers (){
+	public HashMap<String, Question> getAnswers (){
 		return questions;
 	}
 	
