@@ -1,11 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
+
 <body>
 	<p>You answered: ${answer1} to "Do you support gay marriage?"</p>
 	<br>
@@ -21,4 +14,3 @@
 	<li>Position</li>
 	</ul></h3>
 </body>
-</html>
