@@ -32,18 +32,31 @@ public class MatchServlet extends HttpServlet {
 		
 		// Receive the strings passed by the AJAX call in loadResults.js
 		String marriage = request.getParameter("marriage_question");
-		String kavanaugh = request.getParameter("kavanaugh_question");
-		String isis = request.getParameter("isis_question");
+		String guns = request.getParameter("guns_question");
+		String globalwarming = request.getParameter("globalwarming_question");
+		String abortion = request.getParameter("abortion_question");
+		String healthcare = request.getParameter("healthcare_question");
+
+
 		
 		// Check if the answers came out correctly
 		System.out.println("marriage: " + marriage);
-		System.out.println("kavanaugh: " + kavanaugh);
-		System.out.println("isis: " + isis);
+		System.out.println("guns: " + guns);
+		System.out.println("global warming: " + globalwarming);
+		System.out.println("abortion: " + abortion);
+		System.out.println("health care: " + healthcare);
+
+
 		
 		// Save the values of the strings so they can be used in the JSP file
 		request.setAttribute("answer1", marriage);
-		request.setAttribute("answer2", kavanaugh);
-		request.setAttribute("answer3", isis);
+		request.setAttribute("answer2", guns);
+		request.setAttribute("answer3", globalwarming);
+		request.setAttribute("answer4", abortion);
+		request.setAttribute("answer5", healthcare);
+
+
+		
 		
 		// Forwards the info from this servlet to the JSP
 		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/results.jsp");
