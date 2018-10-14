@@ -35,44 +35,20 @@
         background-color: LightSeaGreen;
     }
     
-    #banner1 {
-	  position: absolute;
-	  top: 0px;
-	  right: 0px;
-	  width: 50%;
-	  height: 50px;
-	  z-index: -1;
+	.w3-content{position:relative;margin-top:0em;}
+	.w3-btn,.w3-button{border:none;display:inline-block;outline:0;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+	.w3-btn,.w3-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none} 
+	.w3-disabled,.w3-btn:disabled,.w3-button:disabled{cursor:not-allowed;opacity:0.3}.w3-disabled *,:disabled *{pointer-events:none}
+	.w3-bar-block .w3-dropdown-hover .w3-button,.w3-bar-block .w3-dropdown-click .w3-button{width:100%;text-align:left;padding:8px 16px}
+	.w3-button:hover{color:#000!important;background-color:#ccc!important}
+	
+	.w3-content button {
+	position: absolute;
+	top: 32%;
 	}
 	
-	#banner2 {
-	  position: absolute;
-	  top: 0px;
-	  left: 0px;
-	  width: 50%;
-	  height: 50px;
-	  z-index: -1;
-	}
-    
-
-	input[type=button] {
-		position: absolute;
-		top: 0px;
-	    background-color: #e7e7e7;
-	    color: black;
-	    border: none;
-	    height: 50px;
-	    width: 50%
-	    padding: 15px 32px;
-	    float: left;
-	    text-align: center;
-	    text-decoration: none;
-	    display: inline-block;
-	    font-size: 16px;
-	}
-	.button:hover {
-	    background-color: #e7e7e7; /* Green */
-	    color: white;
-	}
+	.w3-display-right {right:0}
+	.w3-display-left {left:0}
     </style>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.js"></script>
