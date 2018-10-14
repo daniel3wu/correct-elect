@@ -37,10 +37,10 @@ public class Matcher {
 		private int match(Politician politician) {
 			int diff = 0;
 			//TODO: update the term for opinions
-			for(String key: myUser.opinions.keySet) {
-				diff += Math.pow((myUser.opinions.get(key) - politician.opinions.get(key)), 2);
+			for(String key: myUser.getKeys()) {
+				diff += Math.pow((myUser.getRating(key) - politician.getRating(key)), 2);
 			}
-			diff = diff/myUser.opinions.length;
+			diff = diff/myUser.getKeys().size();
 			
 			return (int) ((4 - diff)/0.04);
 			

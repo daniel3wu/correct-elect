@@ -3,6 +3,7 @@ package object;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Set;
 
 public class Person {
 	protected String myName;
@@ -52,6 +53,10 @@ public class Person {
 	
 	public int getRating(String s) {
 		return opinions.get(s);
+	}
+	
+	public Set<String> getKeys() {
+		return opinions.keySet();
 	}
 	
 	public int getId() {
