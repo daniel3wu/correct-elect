@@ -1,9 +1,19 @@
 package object;
 
+import java.util.HashMap;
+
 public class User extends Person {
 	
 	private String myStreetAddress;
 	private String myCity;
+	
+	public User(String name, HashMap<String, Integer> ratings) {
+		myName = name;
+		
+		for (String issue : ratings.keySet()) {
+			assignRating(issue, ratings.get(issue));
+		}
+	}
 	
 	public void assignRating(String s, int rating) {
 		opinions.put(s, rating);
