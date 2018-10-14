@@ -41,7 +41,7 @@ public class QuizServlet extends HttpServlet {
 		Question five = new Question("Should the government provide universal health care?", "abortion");
 
 		Question[] allQuestions = {one, two,three,four,five};
-
+		request.setAttribute("allQuestions", allQuestions);
 		
 		/**
 		 * Question one = new Question()

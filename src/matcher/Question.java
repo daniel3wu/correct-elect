@@ -20,6 +20,10 @@ public class Question {
 		return this.text;
 	}
 	
+	public String getName() {
+		return this.name;
+	}
+	
 //	Question(String input){
 //		
 //		if (input.equals("Yes"))
