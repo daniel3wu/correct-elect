@@ -5,7 +5,8 @@
 
 <jsp:include page="header.jsp"></jsp:include>
 
-<body>
+<body id="page-top" class="index">
+
 
 </body>
 </html>

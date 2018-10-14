@@ -16,6 +16,18 @@ public class User extends Person {
 		}
 	}
 	
+	@Override
+	public boolean equals(Object o) {
+		if (! (o instanceof User) || o == null){
+			return false;
+		}
+		User ob = (User) o;
+		if (ob.getId() == myId) {
+			return true;
+		}
+		return false;
+	}
+	
 	public void assignStreetAddress(String addy) {
 		myStreetAddress = addy;
 	}
