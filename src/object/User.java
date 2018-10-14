@@ -2,6 +2,9 @@ package object;
 
 public class User extends Person {
 	
+	private String myStreetAddress;
+	private String myCity;
+	
 	public void assignRating(String s, int rating) {
 		opinions.put(s, rating);
 		switch (s){
@@ -13,6 +16,20 @@ public class User extends Person {
 		}
 	}
 	
+	public void assignStreetAddress(String addy) {
+		myStreetAddress = addy;
+	}
 	
+	public void assignCity(String city) {
+		myCity = city;
+	}
+	
+	public String getStreetAddress() {
+		return myStreetAddress;
+	}
+	
+	public String getCity() {
+		return myCity;
+	}
 
 }
