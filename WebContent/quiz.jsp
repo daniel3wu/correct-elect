@@ -65,7 +65,7 @@ What are your thoughts on gay marriage?<br>
 <br>
 
 Do you like Brett Kavanaugh? <br>
-<input type="radio" name="kavanaugh" value="Yes" required> Yes <br>
+<input type="radio" name="kavanaugh" value="Yes"  required> Yes <br>
 <input type="radio" name="kavanaugh" value="No" required> No <br>
 
 <br>

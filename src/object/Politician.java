@@ -19,7 +19,7 @@ public class Politician {
 	private int abortionRating;
 	private int healthcareRating;
 	
-	public enum Party {DEMOCRAT, REPUBLICAN}
+	public enum Party {DEMOCRAT, REPUBLICAN, LIBRETARIAN, GREEN}
 	private static final ArrayList<Party> parties = new ArrayList<Party> (Arrays.asList(Party.values()));
 	
 	public enum Office {SENATOR, REPRESENTATIVE, PRESIDENT, GOVERNOR, MAYOR}
@@ -52,12 +52,29 @@ public class Politician {
 		return myName;
 	}
 	
+	public Office getOffice() {
+		return myOffice;
+	}
+	
+	public Party getParty() {
+		return myParty;
+	}
+	
+	public int getZip() {
+		return myZip;
+	}
+	
 	private void initializeRatings() {
 		gunRating = rand.nextInt(3);
 		lgbtqRating = rand.nextInt(3);
 		enviroRating = rand.nextInt(3);
 		abortionRating = rand.nextInt(3);
 		healthcareRating = rand.nextInt(3);
+		opinions.put("gun", gunRating);
+		opinions.put("lgbtq", lgbtqRating);
+		opinions.put("environment", enviroRating);
+		opinions.put("abortion", abortionRating);
+		opinions.put("healthcare", healthcareRating);
 	}
 	
 	public int getGunRating() {
@@ -75,7 +92,7 @@ public class Politician {
 	public int getHealthcareRating() {
 		return healthcareRating;
 	}
-	
+	 
 	private double getSigRating(int sigId, String sigName) {
 		//use api and the getCandidateRating function to return the candidates rating with the sig
 		
