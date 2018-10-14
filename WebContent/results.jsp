@@ -1,5 +1,5 @@
 
-<body>
+
 	<p>You answered: ${answer1} to "Do you support gay marriage?"</p>
 	<br>
 	<p>You answered: ${answer2} to "Do you support gun control?"</p>
@@ -19,4 +19,4 @@
 	<li>State</li>
 	<li>Position</li>
 	</ul></h3>
-</body>
+
