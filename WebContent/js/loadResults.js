@@ -10,7 +10,7 @@ $(document).ready(function(){
 		
 		$.ajax({
 			method: "GET",
-			url: "/match",
+			url: "/correct-elect/match",
 			data: {
 				marriage_question: marriage,
 				kavanaugh_question: kavanaugh,
