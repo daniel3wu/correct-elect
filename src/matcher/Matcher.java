@@ -36,7 +36,6 @@ public class Matcher {
 		 */
 		private int match(Politician politician) {
 			int diff = 0;
-			//TODO: update the term for opinions
 			for(String key: myUser.getKeys()) {
 				diff += Math.pow((myUser.getRating(key) - politician.getRating(key)), 2);
 			}
@@ -69,6 +68,10 @@ public class Matcher {
 				if(map.get(key) == max) return key;
 			}
 			return null;
+		}
+		
+		public int agreement(Politician pol) {
+			return map.get(pol);
 		}
 		
 		

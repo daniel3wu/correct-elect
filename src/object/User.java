@@ -1,17 +1,18 @@
 package object;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class User extends Person {
 	
 	private String myStreetAddress;
 	private String myCity;
 	
-	public User(String name, HashMap<String, Integer> ratings) {
+	public User(String name, Map<String, Integer> answerMap) {
 		myName = name;
 		
-		for (String issue : ratings.keySet()) {
-			assignRating(issue, ratings.get(issue));
+		for (String issue : answerMap.keySet()) {
+			assignRating(issue, answerMap.get(issue));
 		}
 	}
 	
