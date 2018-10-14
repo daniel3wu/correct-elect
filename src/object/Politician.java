@@ -40,9 +40,9 @@ public class Politician extends Person{
 		enviroRating = rand.nextInt(3);
 		abortionRating = rand.nextInt(3);
 		healthcareRating = rand.nextInt(3);
-		opinions.put("gun", gunRating);
-		opinions.put("lgbtq", lgbtqRating);
-		opinions.put("environment", enviroRating);
+		opinions.put("guns", gunRating);
+		opinions.put("marriage", lgbtqRating);
+		opinions.put("globalwarming", enviroRating);
 		opinions.put("abortion", abortionRating);
 		opinions.put("healthcare", healthcareRating);
 	}

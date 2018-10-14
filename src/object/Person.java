@@ -52,6 +52,8 @@ public class Person {
 	}
 	
 	public int getRating(String s) {
+		System.out.println(s);
+		System.out.println(this);
 		return opinions.get(s);
 	}
 	

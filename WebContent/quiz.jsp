@@ -13,7 +13,7 @@
 					<!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
 					<!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
 
-						<c:forEach var = "i" begin = "1" end = "5">
+						<!--  <c:forEach var = "i" begin = "1" end = "5">
          					Item <c:out value = "${i}"/><p> <br>
       					</c:forEach>
       					
@@ -25,35 +25,40 @@
  							<br> 
  						</c:forEach> 
  						
- 					
+ 					-->
 						
-<!-- 						Do you support gay marriage?<br>  -->
-<!-- 						<input type="radio" name="marriage" value="Yes" required> Yes <br> -->
-<!-- 						<input type="radio" name="marriage" value="No" required>No <br>  -->
+ 						Do you support gay marriage?<br>  
+ 						<input type="radio" name="marriage" value="2" required> Yes <br> 
+ 						<input type="radio" name="marriage" value="1" required> No opinion <br>  
+ 						<input type="radio" name="marriage" value="0" required>No <br>  
 						
-<!-- 						<br>  -->
+						<br>  
 						
-<!-- 						Do you support gun control? <br>  -->
-<!-- 						<input type="radio" name="guns" value="Yes" required> Yes <br> -->
-<!-- 						<input type="radio" name="guns" value="No" required> No <br>  -->
+ 						Do you support gun control? <br> 
+						<input type="radio" name="guns" value="2" required> Yes <br>
+						<input type="radio" name="guns" value="1" required> No opinion <br>
+ 					<input type="radio" name="guns" value="0" required> No <br> 
 						
-<!-- 						<br> -->
+						<br> 
 						
-<!-- 						Do you believe in global warming? <br> -->
-<!-- 						<input type="radio" name="globalwarming" value="Yes" required> Yes <br>  -->
-<!-- 						<input type="radio" name="globalwarming" value="No" required> No <br>  -->
+						Do you believe in global warming? <br> 
+						<input type="radio" name="globalwarming" value="2" required> Yes <br> 
+						<input type="radio" name="globalwarming" value="1" required> No opinion <br> 
+						<input type="radio" name="globalwarming" value="0" required> No <br>  
 						
-<!-- 						<br>						 -->
+ 						<br>					
 						
-<!-- 						Do you think abortion should be legal? <br> -->
-<!-- 						<input type="radio" name="abortion" value="Yes" required> Yes <br>  -->
-<!-- 						<input type="radio" name="abortion" value="No" required> No <br>  -->
+						Do you think abortion should be legal? <br> 
+						<input type="radio" name="abortion" value="2" required> Yes <br>
+						<input type="radio" name="abortion" value="1" required> No opinion <br>
+						<input type="radio" name="abortion" value="0" required> No <br>  
 						
-<!-- 						<br> -->
+						<br>
 						
-<!-- 						Should the government provide universal health care? <br> -->
-<!-- 						<input type="radio" name="healthcare" value="Yes" required> Yes <br>  -->
-<!-- 						<input type="radio" name="healthcare" value="No" required> No <br>  -->
+						Should the government provide universal health care? <br>
+						<input type="radio" name="healthcare" value="2" required> Yes <br>
+						<input type="radio" name="healthcare" value="1" required> No opinion <br> 
+						<input type="radio" name="healthcare" value="0" required> No <br> 
 						
 						<br> <br> <br> 
 						

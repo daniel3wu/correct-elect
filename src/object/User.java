@@ -22,7 +22,7 @@ public class User extends Person {
 			case("gun"): gunRating = rating;
 			case ("healthcare"): healthcareRating = rating;
 			case ("lgbtq"): lgbtqRating = rating;
-			case ("enviro"): enviroRating = rating;
+			case ("environment"): enviroRating = rating;
 			case ("abortion"): abortionRating = rating;
 		}
 	}

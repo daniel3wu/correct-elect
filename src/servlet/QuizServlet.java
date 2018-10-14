@@ -38,7 +38,7 @@ public class QuizServlet extends HttpServlet {
 		Question two = new Question("Do you support gun control?", "guns");
 		Question three = new Question("Do you believe in global warming?", "globalwarming");
 		Question four = new Question("Do you think abortion should be legal?", "abortion");
-		Question five = new Question("Should the government provide universal health care?", "abortion");
+		Question five = new Question("Should the government provide universal health care?", "healthcare");
 
 		Question[] allQuestions = {one, two,three,four,five};
 		request.setAttribute("allQuestions", allQuestions);

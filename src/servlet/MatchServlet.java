@@ -41,19 +41,19 @@ public class MatchServlet extends HttpServlet {
 		// Receive the strings passed by the AJAX call in loadResults.js
 		Map<String, Integer> answerMap = new HashMap<String, Integer>();
 		String marriage = request.getParameter("marriage_question");
-		answerMap.put("marriage_question", Integer.parseInt(marriage));
+		answerMap.put("marriage", Integer.parseInt(marriage));
 		
 		String guns = request.getParameter("guns_question");
-		answerMap.put("guns_question", Integer.parseInt(guns));
+		answerMap.put("guns", Integer.parseInt(guns));
 		
 		String globalwarming = request.getParameter("globalwarming_question");
-		answerMap.put("globalwarming_question", Integer.parseInt(globalwarming));
+		answerMap.put("globalwarming", Integer.parseInt(globalwarming));
 		
 		String abortion = request.getParameter("abortion_question");
-		answerMap.put("abortion_question", Integer.parseInt(abortion));
+		answerMap.put("abortion", Integer.parseInt(abortion));
 		
 		String healthcare = request.getParameter("healthcare_question");
-		answerMap.put("healthcare_question", Integer.parseInt(healthcare));
+		answerMap.put("healthcare", Integer.parseInt(healthcare));
 
 		
 		
