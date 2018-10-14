@@ -16,7 +16,7 @@
 
 						What are your thoughts on gay marriage?<br> 
 						<input type="radio" name="marriage" value="Yes" required> Yes <br>
-						<input type="radio" name="marriage" value="No" required>No <br> 
+						<input type="radio" name="marriage" value="No" required> No <br> 
 						
 						<br> 
 						
