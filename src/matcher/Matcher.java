@@ -4,6 +4,7 @@ import object.Politician;
 import object.User;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -30,7 +31,7 @@ public class Matcher {
 		/**
 		 * Calculates the % agreement of opinions between the politician passed and myUser by 
 		 * calculating the mean difference of opinion in each topic
-		 * @param politician
+		 * @param politician 
 		 * @return
 		 */
 		private int match(Politician politician) {
@@ -57,8 +58,18 @@ public class Matcher {
 			return map;
 		}
 		
-		//TODO: add several getter methods which return e.g. the best agreement, agreemenents over a desired 
-		//% and any more you want
+		
+		/**
+		 * Returns the best matching politician
+		 * @return closest match
+		 */
+		public Politician getBestMatch() {
+			int max = Collections.max(map.values());
+			for(Politician key: map.keySet()) {
+				if(map.get(key) == max) return key;
+			}
+			return null;
+		}
 		
 		
 }
