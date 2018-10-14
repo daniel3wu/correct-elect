@@ -1,5 +1,4 @@
 
-<body id="page-top" class="index">
 	<!-- Contact Section -->
 	<section id="contact">
 		<div class="container">
@@ -65,4 +64,3 @@
 			</div>
 		</div>
 	</section>
-</body>

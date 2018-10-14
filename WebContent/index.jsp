@@ -4,7 +4,12 @@
 <html lang="en">
 
 <jsp:include page="header.jsp"></jsp:include>
-
-<jsp:include page="quiz.jsp"></jsp:include>
+<body> 
+	<jsp:include page="tester.jsp"></jsp:include>
+	<div id="content">
+		<jsp:include page="quiz.jsp"></jsp:include>
+	</div>
+</body>
 
 </html>
+
