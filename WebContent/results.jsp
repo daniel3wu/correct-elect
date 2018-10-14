@@ -7,6 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h3>THESE ARE THE RESULTS!</h3>
+	<h3>You got:</h3>
+	<h2>Ted Cruz</h2>
+	<h3><ul>
+	<li>State</li>
+	<li>Position</li>
+	</ul></h3>
 </body>
 </html>

@@ -78,7 +78,7 @@ Do you want to go to war with ISIS? <br>
 
 <br><br>
 
-<a href="https://localhost:8080/correct-elect/MatchServlet" style="color:black; font-size:30px;">SUBMIT</a>
+<a href="http://localhost:8080/correct-elect/match" style="color:black; font-size:30px;">SUBMIT</a>
 
 </form>
 <br>
