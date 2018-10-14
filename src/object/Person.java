@@ -6,7 +6,7 @@ import java.util.HashMap;
 
 public class Person {
 	protected String myName;
-	protected String myId;
+	protected int myId;
 	
 	protected int gunRating;
 	protected int lgbtqRating;
@@ -52,5 +52,9 @@ public class Person {
 	
 	public int getRating(String s) {
 		return opinions.get(s);
+	}
+	
+	public int getId() {
+		return myId;
 	}
 }

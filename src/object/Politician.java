@@ -56,4 +56,16 @@ public class Politician extends Person{
 		return rate;
 	}
 	
+	@Override
+	public boolean equals(Object o) {
+		if (! (o instanceof Politician) || o == null){
+			return false;
+		}
+		Politician ob = (Politician) o;
+		if (ob.getId() == myId) {
+			return true;
+		}
+		return false;
+	}
+	
 }
