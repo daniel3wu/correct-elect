@@ -29,6 +29,23 @@ public class MatchServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("Inside the MatchServlet.java class");
+		
+		// Receive the strings passed by the AJAX call in loadResults.js
+		String marriage = request.getParameter("marriage_question");
+		String kavanaugh = request.getParameter("kavanaugh_question");
+		String isis = request.getParameter("isis_question");
+		
+		// Check if the answers came out correctly
+		System.out.println("marriage: " + marriage);
+		System.out.println("kavanaugh: " + kavanaugh);
+		System.out.println("isis: " + isis);
+		
+		// Save the values of the strings so they can be used in the JSP file
+		request.setAttribute("answer1", marriage);
+		request.setAttribute("answer2", kavanaugh);
+		request.setAttribute("answer3", isis);
+		
+		// Forwards the info from this servlet to the JSP
 		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/results.jsp");
         dispatcher.forward(request, response);
 	}

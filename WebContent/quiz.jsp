@@ -39,8 +39,7 @@
 						
 						<br> <br> <br> 
 						
-						<a href="http://localhost:8080/correct-elect/match"
-							style="color: black; font-size: 30px;">SUBMIT</a>
+						<button id="submit" style="color: black; font-size: 30px;">SUBMIT</a>
 
 					</form>
 					<br>
