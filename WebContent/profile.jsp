@@ -112,7 +112,7 @@
 				
 			</form>
 			<br><br><br><br>
-			<form action="http://localhost:8080/correct-elect/quiz">
+			<form action="http://localhost:8080/correct-elect">
     			<input type="submit" value="Submit" style = "border-radius:20px;"/>
 			</form>
  		

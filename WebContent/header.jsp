@@ -23,6 +23,7 @@
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
 <style type="text/css">
+
     input[type=text]{
         width:100%;
     }
@@ -33,7 +34,45 @@
     body{
         background-color: LightSeaGreen;
     }
+    
+    #banner1 {
+	  position: absolute;
+	  top: 0px;
+	  right: 0px;
+	  width: 50%;
+	  height: 50px;
+	  z-index: -1;
+	}
+	
+	#banner2 {
+	  position: absolute;
+	  top: 0px;
+	  left: 0px;
+	  width: 50%;
+	  height: 50px;
+	  z-index: -1;
+	}
+    
 
+	input[type=button] {
+		position: absolute;
+		top: 0px;
+	    background-color: #e7e7e7;
+	    color: black;
+	    border: none;
+	    height: 50px;
+	    width: 50%
+	    padding: 15px 32px;
+	    float: left;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	    font-size: 16px;
+	}
+	.button:hover {
+	    background-color: #e7e7e7; /* Green */
+	    color: white;
+	}
     </style>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.js"></script>
